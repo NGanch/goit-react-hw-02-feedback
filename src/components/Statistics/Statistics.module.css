@@ -1,0 +1,64 @@
+.statistics {
+    width: 500px;
+    background-color: pink;
+}
+.statistics_good {
+    padding-top: 30px;
+}
+.statistics_good,
+.statistics_neutral,
+.statistics_bad,
+.statistics_total,
+.statistics_featback {
+    margin-left: 50px;
+    font-size: 35px;
+    font-weight: 500;
+}
+.statistics_featback {
+    padding-bottom: 30px;
+}
+.statistics_good:hover,
+.statistics_good:focus {
+    color: rgb(61, 144, 96);
+}
+.statistics_neutral:hover,
+.statistics_neutral:focus {
+    color: rgb(220, 192, 9);
+}
+.statistics_bad:hover,
+.statistics_bad:focus {
+    color: rgb(225, 105, 14);
+}
+.statistics_total:hover,
+.statistics_total:focus {
+    color: rgb(25, 116, 178);
+}
+.statistics_featback:hover,
+.statistics_featback:focus {
+    color: rgb(178, 25, 178);
+}
+.span_good,
+.span_neutral,
+.span_bad,
+.span_total,
+.span_featback {
+    font-size: 40px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+.span_good {
+    color: rgb(61, 144, 96);
+}
+.span_neutral {
+    color: rgb(220, 192, 9);
+}
+.span_bad {
+    color: rgb(225, 105, 14);
+}
+.span_total {
+    color: rgb(25, 116, 178);
+}
+.span_featback {
+    color: rgb(178, 25, 178);
+}
+
