@@ -1,13 +1,31 @@
 import React from 'react';
 import css from './FeedbackOptions.module.css';
 //кнопки
-
-export const FeedbackOptions = ({onCountGood, onCountNeutral, onCountBad}) => {
+const getBgColor = variant => {
+  switch (variant) {
+    case "good":
+      return "rgb(212, 152, 237)"
+             
+    case "bad":
+      return "rgb(147, 33, 234)";
+    case "neutral":
+      return "rgb(228, 92, 180)";
+ 
+    default:
+   
+  }
+};
+export const FeedbackOptions = ({options, onCountOptions}) => {
     return (
       <div className={css.button_div}>
-        <button type="button" className={css.button_good} onClick={onCountGood}>Good</button>
-        <button type="button" className={css.button_neutral} onClick={onCountNeutral}>Neutral</button>
-        <button type="button" className={css.button_bad} onClick={onCountBad}>Bad</button>
+        {options.map(option => (
+        <button 
+        type="button" 
+        style={{ backgroundColor: getBgColor(option)}}
+        onClick={() => {
+        onCountOptions(option)
+        }}>{option}</button>
+        ))}
       </div> 
       );
   }
